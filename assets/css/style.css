@@ -1,3 +1,5 @@
+/* mise en page */
+
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
@@ -6,12 +8,20 @@
     src: url(../fonts/Raleway-Italic-VariableFont_wght.woff2) format('woff2-variations');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1, h2, h3 {
     font-family: 'lato', sans-serif;
 }
 
 h2 {
     color: #17abb3;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
 * {
@@ -29,43 +39,184 @@ body {
     background-color: white;
 }
 
-header {
-    height: 80px;
-    background-color: #17abb3;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    color: white;
-}
-
-header img {
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-    border-radius: 50%;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #17abb3;
-    padding: 0 20px;
-}
-
 .container {
     display: flex;
     align-items: stretch;
 }
 
-.right-of-the-page {
-    order: 2;
-    flex-basis: 800px;
-    padding: 15px 0px 0px 40px;
+.bold {
+    font-weight:bold;
 }
+
+.italique {
+    font-style: italic;
+    font-size: 1em;
+}
+
+/* header */
+
+header {
+    height: 230px;
+    background-color: #17abb3;
+    display: flex;
+    /* align-items: center; */
+    padding: 0 20px;
+    color: white;
+}
+
+#photo {
+    position: static;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    align-items: left;
+    margin: 50px 250px 50px 100px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+#poste {
+    margin: 2px 0 10px;
+    text-align: center;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+#placement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+
+#placement h1 {
+    font-size: 3em;
+}
+
+#placement #poste {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 30px;
+    width: 250px;
+    margin: 15px auto 0;
+}
+
+#grille p {
+    margin: 0;
+}
+
+/* gauche de la page */
 
 .left-of-the-page {
     order: 1;
-    flex-basis: 320px;
-    background-color: #e3e3e3;
-    padding: 15px 0px 0px 40px;
+    flex-basis: 350px;
+    background-color: #ececec;
+    padding: 15px 40px 0px 40px;
+}
+
+.etoiles {
+    color: #17abb3;
+    font-size: 1.3em;
+    margin-left: auto;
+    position: relative;
+    top: -6px;
+}
+
+.langue {
+    display: flex;
+}
+
+.niveau {
+    margin-left: auto;
+    position: relative;
+}
+
+.competence {
+    display: flex;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li::marker {
+    color: #17abb3;
+    font-size: 1.4em;
+}
+
+#qualités ul,
+#centres-dinteret ul {
+    padding-left: 25px;
+}
+
+/* droite de la page */
+
+.alinea {
+    display: block;
+    text-indent: 30px;
+    font-size: 1.2em;
+}
+
+.right-of-the-page {
+    order: 2;
+    flex-basis: 850px;
+    padding: 15px 40px 65px 40px;
+}
+
+.ligne p {
+    margin: 0;
+}
+
+.organisation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    color: #17abb3;
+    font-family: 'lato', sans-serif;
+    font-size: 0.9em;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #17abb3;
+    padding: 20px 20px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 5px;
+}
+
+#logo {
+    display: flex;
+    gap: 15px;
+}
+
+.mis-a-jour {
+    font-style: italic;
 }

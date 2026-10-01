@@ -11,75 +11,103 @@
     <div id="page">
         
         <header>
-            <h1>Tony Salvoro</h1>
-            <p>Développeur Web et Web Mobile</p>
-            <p id="mail">Mail</p>
-            <p id="phone">Téléphone</p>
-            <p id="address">Adresse</p>
-            <p id="license">Permis B</p>
-            <img src="./assets/images/Photo-refaite-ia-cv.png" alt="Photo de Tony Salvoro">
+
+            <img id="photo" src="./assets/images/Photo-refaite-ia-cv.png" alt="Photo de Tony Salvoro">
+
+            <div id="placement">
+                <h1>Tony Salvoro</h1>
+                <p id="poste">Développeur Web et Web Mobile</p>
+                <div id="grille">
+                    <p id="mail"><img class="icon" src="./assets/images/email.png" alt="lettre">Mail</p>
+
+                    <p id="phone"><img class="icon" src="./assets/images/phone-receiver-silhouette.png" alt="téléphone">Téléphone</p>
+
+                    <p id="address"><img class="icon" src="./assets/images/home.png" alt="maison">Adresse</p>
+
+                    <p id="license"><img class="icon" src="./assets/images/car.png" alt="voiture">Permis B</p>
+                </div>
+            </div>
+            
         </header>
 
         <main>
-            <section class="container">
+            <div class="container">
                 <section class="right-of-the-page">
                     <section id="profil">
 
                         <h2>Profil</h2>
-
-                        <p class="texte1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed
+                        
+                        <p><span class="alinea">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed
                         voluptatum quidem cum quam aut voluptatem, consequuntur sunt repellendus porro eaque
                         unde deleniti dicta perferendis magni debitis dolorem atque vitae voluptas. Cum magni
-                        doloribus eius tenetur!<br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed
+                        doloribus eius tenetur!</span>
+                        <span class="alinea">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed
                         voluptatum quidem cum quam aut voluptatem, consequuntur sunt repellendus porro eaque
                         unde deleniti dicta perferendis magni debitis dolorem atque vitae voluptas. Cum magni
-                        doloribus eius tenetur!</p>
+                        doloribus eius tenetur!</span></p>
 
                     </section>
                     <section id="formations">
 
                         <h2>Formations</h2>
+                        
+                        <div class="organisation">
+                            <p><span class="bold">Titre Professionnel DWWM</span><br>
+                            <span class="italique">Centre Européen de Formation</span></p>
+                            <p><span class="date" datetime="2023/2024">2023/2024</span></p>
+                        </div>
+                        
+                        <div class="organisation">
+                            <p><span class="bold">Remise à niveau - Métiers du numérique</span><br>
+                            <span class="italique">Lycée de la ville</span></p>
+                            <p><span class="date" datetime="Juin 2023 - Septembre 2023">Juin 2023 - Septembre 2023</span></p>
+                        </div>
 
-                        <p>Titre Professionnel DWWM</p>
-                        <p class="italique">Centre Européen de Formation</p>
-                        <p class="date" datetime="2023/2024">2023/2024</p>
-
-                        <p>Remise à niveau - Métiers du numérique</p>
-                        <p class="italique">Lycée de la ville</p>
-                        <p class="date" datetime="Juin 2023 - Septembre 2023">Juin 2023 - Septembre 2023</p>
-
-                        <p>Baccalauréat</p>
-                        <p class="italique">Lycée de la ville</p>
-                        <p class="date" datetime="1983">1983</p>
+                        <div class="organisation">
+                            <p><span class="bold">Baccalauréat</span><br>
+                            <span class="italique">Lycée de la ville</span></p>
+                            <p><span class="date" datetime="1983">1983</span></p>
+                        </div>
 
                     </section>
                     <section id="stages">
 
                         <h2>Stages</h2>
 
-                        <p>Gestionnaire de paye</p>
-                        <p class="italique">Société Truc & Machin</p>
-                        <p class="date" datetime="Mars 2022 - Avril 2022">Mars 2022 - Avril 2022</p>
+                        <div class="organisation">
+                            <p><span class="bold">Gestionnaire de paye</span><br>
+                            <span class="italique">Société Truc & Machin</span></p>
+                            <p><span class="date" datetime="Mars 2022 - Avril 2022">Mars 2022 - Avril 2022</span></p>
+                        </div>
 
-                        <p>Agent</p>
-                        <p class="italique">mairie de la ville</p>
-                        <p class="date" datetime="Janvier 2021 - Février 2021">Janvier 2021 - Février 2021</p>
+                        <div class="organisation">
+                            <p><span class="bold">Agent</span><br>
+                            <span class="italique">Mairie de la ville</span></p>
+                            <p><span class="date" datetime="Janvier 2021 - Février 2021">Janvier 2021 - Février 2021</span></p>
+                        </div>
 
                     </section>
-                    <section id="competences">
+                    <section id="experience">
 
                         <h2>Expérience Professionnelle</h2>
 
-                        <p>Agent d'accueil</p>
-                        <p class="italique">Mairie de la ville</p>
-                        <p class="date" datetime="Mars 2021 - Juillet 2021">Mars 2021 - Juillet 2021</p>
-                        <p>Chauffeur - Livreur</p>
-                        <p class="italique">transport Nénès & fils</p>
-                        <p class="date" datetime="Septembre 2021 - Décembre 2021">Septembre 2021 - Décembre 2021</p>
-                        <p>Préparateur de commandes</p>
-                        <p class="italique">Le slip français</p>
-                        <p class="date" datetime="Janvier 2000 - Septembre 2000">Janvier 2000 - Septembre 2000</p>
+                        <div class="organisation">
+                            <p><span class="bold">Agent d'accueil</span><br>
+                            <span class="italique">Mairie de la ville</span></p>
+                            <p><span class="date" datetime="Mars 2021 - Juillet 2021">Mars 2021 - Juillet 2021</span></p>
+                        </div>
+
+                        <div class="organisation">
+                            <p><span class="bold">Chauffeur - Livreur</span><br>
+                            <span class="italique">Transport Nénès & fils</span></p>
+                            <p><span class="date" datetime="Septembre 2021 - Décembre 2021">Septembre 2021 - Décembre 2021</span></p>
+                        </div>
+
+                        <div class="organisation">
+                            <p><span class="bold">Préparateur de commandes</span><br>
+                            <span class="italique">Le slip français</span></p>
+                            <p><span class="date" datetime="Janvier 2000 - Septembre 2000">Janvier 2000 - Septembre 2000</span></p>
+                        </div>
 
                     </section>
                 </section>
@@ -89,32 +117,42 @@
 
                         <h2>Compétences</h2>
 
-                        <div class="competence">
-                            <span>HTML</span>
+                        <p><div class="competence">
+                            <span class="bold">HTML</span>
                             <span class="etoiles">★★★★☆</span>
-                        </div>
+                        </div></p>
 
-                        <div class="competence">
-                            <span>CSS</span>
+                        <p><div class="competence">
+                            <span class="bold">CSS</span>
                             <span class="etoiles">★★★★☆</span>
-                        </div>
-                        <div class="competence">
-                            <span>JavaScript</span>
+                        </div></p>
+                        <p><div class="competence">
+                            <span class="bold">JavaScript</span>
                             <span class="etoiles">★★☆☆☆</span>
-                        </div>
-                        <div class="competence">
-                            <span>PHP</span>
+                        </div></p>
+                        <p><div class="competence">
+                            <span class="bold">PHP</span>
                             <span class="etoiles">★☆☆☆☆</span>
-                        </div>
+                        </div></p>
 
                     </section>
                     <section id="langues">
 
                         <h2>Langues</h2>
 
-                        <p>Français : Langue maternelle</p>
-                        <p>Anglais : Professionnel</p>
-                        <p>Allemand : Notions</p>
+                        <p><div class="langue">
+                            <span class="bold">Français</span>
+                            <span class="niveau">Langue maternelle</span>
+                        </div></p>
+    
+                        <p><div class="langue">
+                            <span class="bold">Anglais</span>
+                            <span class="niveau">Professionnel</span>
+                        </div></p>
+                        <p><div class="langue">
+                            <span class="bold">Allemand</span>
+                            <span class="niveau">Notions</span>
+                        </div></p>
 
                     </section>
                     <section id="qualités">
@@ -141,14 +179,16 @@
 
                     </section>
                 </section>
-            </section>
+            </div>
         </main>
 
         <footer>
-            <img src="./assets/images/logo-linkedin.png" alt="Logo LinkedIn">
-            <img src="./assets/images/logo-github.png" alt="Logo GitHub">
-            <img src="./assets/images/logo-instagram.png" alt="Logo Instagram">
-            <small>Mis à jour le : JJ/MM/AAAA</small>
+            <div id="logo">
+                <img src="./assets/images/logo-linkedin.png" alt="Logo LinkedIn">
+                <img src="./assets/images/logo-github.png" alt="Logo GitHub">
+                <img src="./assets/images/logo-instagram.png" alt="Logo Instagram">
+            </div>
+            <small class="mis-a-jour">Mis à jour le : JJ/MM/AAAA</small>
         </footer>
 
     </div>

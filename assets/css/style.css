@@ -71,7 +71,6 @@ header {
     border-radius: 50%;
     border: 5px solid white;
     object-fit: cover;
-    align-items: left;
     margin: 50px 250px 50px 100px;
     cursor: zoom-in;
 }
@@ -97,7 +96,6 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: right;
 }
 
 #placement h1 {
@@ -142,6 +140,7 @@ header h1 {
 
 .langue {
     display: flex;
+    padding: 7px 0;
 }
 
 .niveau {
@@ -151,6 +150,7 @@ header h1 {
 
 .competence {
     display: flex;
+    padding: 3px 0;
 }
 
 ul {
@@ -169,10 +169,11 @@ li::marker {
 
 /* droite de la page */
 
-.alinea {
+.texte {
     display: block;
     text-indent: 30px;
     font-size: 1.2em;
+    text-align: justify;
 }
 
 .right-of-the-page {
